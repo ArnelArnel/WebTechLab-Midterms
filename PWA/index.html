@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/style.css">
+	<title>PWA Test</title>
+</head>
+<body>
+	<header>
+		<h1>Arnel Pussy Dental Clinic Transaction Manager</h1>
+	</header>
+	<div class="container">	
+		<button class="trigger2">Show Fees and Services</button>
+	    <div class="modal2">
+	        <div class="modal-content2">
+	            <span class="close-button2">&times;</span>
+	            <h1>Arnel Pussy Dental Clinic</h1>
+	            <h3>Services and Fees</h3>
+	            <ul>
+	            	<li>Service 1 = Php 10,000.00</li>
+	            	<li>Service 2 = Php 10,000.00</li>
+	            	<li>Service 3 = Php 10,000.00</li>
+	            	<li>Service 4 = Php 10,000.00</li>
+	            	<li>Service 5 = Php 10,000.00</li>
+	            	<li>Service 6 = Php 10,000.00</li>
+	            	<li>Service 7 = Php 10,000.00</li>
+	            	<li>Service 8 = Php 10,000.00</li>
+	            </ul>
+	            <h5>Note: The following fees of different Services are fix. NO TO TAWAD</h5>
+	        </div>
+	    </div>
+		<button class="trigger">Add Transaction</button>
+    	<div class="modal">
+       		<div class="modal-content">
+       			<span class="close-button">&times;</span>
+       		<form action="*">
+		        <div class="content">
+		          <h3>
+		            Please fill in this form to add services.
+		          </h3>
+		        		<label for="fname"><b>First Name</b></label>
+						<input type="text" placeholder="Enter First Name" name="fname" required>
+
+						<label for="lname"><b>Last Name</b></label>
+						<input type="text" placeholder="Enter Lastname" name="lname" required>
+
+						<label for="dateOfServices"><b>Date Of Service</b></label>
+						<input type="date" name="dateOfServices" id="dateOfServices" required>
+						<br>
+						<br>
+		        		<label><b>Services</b></label>
+		        		<div class="row">
+		        			<div class="columns">				
+								<input type="checkbox" id="services1" name="services-1" value="service1">
+								<label for="services1">Services 1</label>
+
+								<input type="checkbox" id="services2" name="services-2" value="service2">
+								<label for="services2">Services 2</label>
+								
+								<input type="checkbox" id="services3" name="services-3" value="service3">
+								<label for="services3">Services 3</label>
+								
+								<input type="checkbox" id="services4" name="services-4" value="service4">
+								<label for="services4">Services 4</label>
+		        			</div>
+		        			<div class="columns">				
+								<input type="checkbox" id="services5" name="services-5" value="service5">
+								<label for="services5">Services 5</label>
+
+								<input type="checkbox" id="services6" name="services-6" value="service6">
+								<label for="services6">Services 6</label>
+								
+								<input type="checkbox" id="services7" name="services-7" value="service7">
+								<label for="services7">Services 7</label>
+								
+								<input type="checkbox" id="services8" name="services-8" value="service8">
+								<label for="services8">Services 8</label>
+		        			</div>
+		        		</div>
+		        		<br>
+		        		<br>
+		        		<label for="amount"><b>Amount</b></label>
+						<input type="text" placeholder="Generate Fees" name="amount" required>	
+		        </div>
+					<button type="submit" style="text-align: center;">Submit</button>
+		      </form>
+       		</div>
+       	</div>
+	</div>
+	<script type="text/javascript">
+		let storageObj = {
+			name: "Arnel",
+			age: 19
+		};
+
+		localStorage.setItem("storageObj",storageObj);
+		console.log(localStorage);
+	</script>
+</body>
+	<script src="js/app.js"></script>
+	<script src="js/vanilla.js"></script>
+</html>
